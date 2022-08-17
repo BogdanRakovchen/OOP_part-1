@@ -4,7 +4,6 @@ public class Griffindor extends Hogwards {
     private int nobility;
     private int honour;
     private int bravery;
-
     private String name;
 
     public Griffindor(int conjure, int transgress, int nobility, int honour, int bravery, String name) {
@@ -15,17 +14,16 @@ public class Griffindor extends Hogwards {
         this.name = name;
     }
 
+    @Override
     public int compareCharacteristic() {
         int sum = 0;
         sum += getNobility() + getHonour() + getBravery();
-        System.out.println(sum);
         return sum;
     }
 
 
+    @Override
     public void descriptionStudent() {
-        System.out.println("Описание студента:");
-        System.out.println("Качества всех студентов: " + getConjure() + " " + getTransgress());
         System.out.println("Качества студента" + " " + getName() + " " + " факультета Гриффиндоров: " +
                 getNobility() + " " + getHonour() + " " + getBravery());
     }

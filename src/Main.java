@@ -8,8 +8,11 @@ public class Main {
         Griffindor hermionaGreidger = new Griffindor(2, 4, 7, 12, 21, "Гермона");
         Griffindor ronYizli = new Griffindor(1,4,2, 23, 12, "Рон");
 
+        hogwards.descriptionStudent();
         harreyPotter.descriptionStudent();
+        hogwards.descriptionStudent();
         hermionaGreidger.descriptionStudent();
+        hogwards.descriptionStudent();
         ronYizli.descriptionStudent();
 
         harreyPotter.compareCharacteristic(harreyPotter, hermionaGreidger);

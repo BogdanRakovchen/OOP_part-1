@@ -1,6 +1,6 @@
 package scollMagic;
 
-public class Puffendyi extends Hogwards implements DescriptionStudent {
+public class Puffendyi extends Hogwards {
 
     private String name;
     private int industrious;
@@ -15,16 +15,16 @@ public class Puffendyi extends Hogwards implements DescriptionStudent {
         this.honest = honest;
     }
 
+    @Override
     public int compareCharacteristic() {
         int sum = 0;
         sum += getIndustrious() + getFaithful() + getHonest();
-        System.out.println(sum);
         return sum;
     }
 
+
+    @Override
     public void descriptionStudent() {
-        System.out.println("Описание студента:");
-        System.out.println("Качества всех студентов: " + getConjure() + " " + getTransgress());
         System.out.println("Качества студента" + " " + getName() + " " + "факультета Гриффиндоров: " +
                 getIndustrious() + " " + getFaithful() + " " + getHonest());
     }

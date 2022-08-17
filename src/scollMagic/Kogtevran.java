@@ -17,16 +17,16 @@ public class Kogtevran extends Hogwards {
         this.fullOfCreativity = fullOfCreativity;
     }
 
+    @Override
     public int compareCharacteristic() {
         int sum = 0;
         sum += getIntelligent() + getWise() + getWitty() + getFullOfCreativity();
-        System.out.println(sum);
         return sum;
     }
 
+
+    @Override
     public void descriptionStudent() {
-        System.out.println("Описание студента:");
-        System.out.println("Качества всех студентов: " + getConjure() + " " + getTransgress());
         System.out.println("Качества студента" + " " + getName() + " " +  "факультета Гриффиндоров: " +
                 getIntelligent() + " " + getWise() + " " + getWitty() + getFullOfCreativity() );
     }

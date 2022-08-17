@@ -20,16 +20,15 @@ public class Slizerin extends Hogwards {
 
     }
 
+    @Override
     public int compareCharacteristic() {
         int sum = 0;
         sum += getCunning() + getDetermination() + getAmbition() + getLustForPower();
-        System.out.println(sum);
         return sum;
     }
 
+    @Override
     public void descriptionStudent() {
-        System.out.println("Описание студента:");
-        System.out.println("Качества всех студентов: " + getConjure() + " " + getTransgress());
         System.out.println("Качества студента" + " " + getName() + " " + "факультета Гриффиндоров: " +
                 getCunning() + " " + getDetermination() + " " + getAmbition() + getLustForPower());
     }
