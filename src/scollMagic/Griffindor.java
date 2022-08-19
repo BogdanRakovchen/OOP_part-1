@@ -1,4 +1,7 @@
 package scollMagic;
+
+import java.util.Arrays;
+
 public class Griffindor extends Hogwards {
 
     private int nobility;
@@ -21,16 +24,6 @@ public class Griffindor extends Hogwards {
         return sum;
     }
 
-
-    @Override
-    public void descriptionStudent() {
-        System.out.println("Качества студента" + " " + getName() + " " + " факультета Гриффиндоров: " +
-                getNobility() + " " + getHonour() + " " + getBravery());
-    }
-
-
-
-
     public void compareCharacteristic(Griffindor student_1, Griffindor student_2) {
         if(student_1.compareCharacteristic() > student_2.compareCharacteristic()) {
             System.out.println(student_1.getName() + " лучший Гриффиндорец, чем " + student_2.getName());
@@ -38,6 +31,17 @@ public class Griffindor extends Hogwards {
             System.out.println(student_2.getName() + " лучший Гриффиндорец, чем " + student_1.getName());
         }
     }
+
+
+    @Override
+    public void descriptionStudent() {
+        super.descriptionStudent();
+        System.out.println("Качества студента" + " " + getName() + " " + " факультета Гриффиндоров: " +
+                getNobility() + " " + getHonour() + " " + getBravery());
+    }
+
+
+
 
 
 
@@ -58,7 +62,7 @@ public class Griffindor extends Hogwards {
     }
 
 
-
+    @Override
     public String getName() {
         return name;
     }

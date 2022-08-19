@@ -2,7 +2,7 @@ package scollMagic;
 
 import java.util.zip.ZipEntry;
 
-public class Hogwards implements DescriptionStudent{
+public class Hogwards implements DescriptionStudent {
     private int conjure;
     private int transgress;
 
@@ -10,6 +10,7 @@ public class Hogwards implements DescriptionStudent{
         this.conjure = conjure;
         this.transgress = transgress;
     }
+
 
 
     public void descriptionStudent() {
@@ -22,6 +23,16 @@ public class Hogwards implements DescriptionStudent{
         return sum;
     }
 
+    public String  getName() {
+        return " ";
+    }
+    public void compareCharacteristic(Hogwards s1, Hogwards s2) {
+        if (s1.compareCharacteristic() > s2.compareCharacteristic()) {
+            System.out.println(s1.getName() + " лучший Гриффиндорец, чем " + s2.getName());
+        } else {
+            System.out.println(s2.getName() + " лучший Гриффиндорец, чем " + s1.getName());
+        }
+    }
 
 
     public int getConjure() {

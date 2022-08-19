@@ -17,6 +17,7 @@ public class Kogtevran extends Hogwards {
         this.fullOfCreativity = fullOfCreativity;
     }
 
+
     @Override
     public int compareCharacteristic() {
         int sum = 0;
@@ -27,18 +28,19 @@ public class Kogtevran extends Hogwards {
 
     @Override
     public void descriptionStudent() {
-        System.out.println("Качества студента" + " " + getName() + " " +  "факультета Гриффиндоров: " +
-                getIntelligent() + " " + getWise() + " " + getWitty() + getFullOfCreativity() );
+        super.descriptionStudent();
+        System.out.println("Качества студента" + " " + getName() + " " +  "факультета  Kогтевранов: " +
+                getIntelligent() + " " + getWise() + " " + getWitty() + " " + getFullOfCreativity() );
     }
 
-    public void compareCharacteristic(Kogtevran student_1, Kogtevran student_2) {
+    @Override
+    public void compareCharacteristic(Hogwards student_1, Hogwards student_2) {
         if(student_1.compareCharacteristic() > student_2.compareCharacteristic()) {
-            System.out.println(student_1.getName() + " лучший Гриффиндорец, чем " + student_2.getName());
+            System.out.println(student_1.getName() + " лучший Когтевран, чем " + student_2.getName());
         } else {
-            System.out.println(student_2.getName() + " лучший Гриффиндорец, чем " + student_1.getName());
+            System.out.println(student_2.getName() + " лучший Когтевран, чем " + student_1.getName());
         }
     }
-
 
 
     public int getIntelligent() {
